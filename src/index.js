@@ -17,6 +17,10 @@ function generatepoem(event) {
   let prompt = `Find a well-known Persian poem about ${userInput.value} written by a famous Iranian poet. Translate it into English, format it in HTML with each verse separated by <br>, and correctly attribute it at the end using <strong>Poet’s Name</strong>.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="loader-container"><span class="loader"></span></div>`;
+
   axios.get(apiUrl).then(displayPoem);
 }
 

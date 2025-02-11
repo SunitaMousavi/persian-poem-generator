@@ -20,20 +20,22 @@
       </header>
 
       <main>
-        <form id="generate">
-          <input
-            type="text"
-            placeholder="Enter a topic for the poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="search-bar"
-            id="user-input" />
+        <div class="form-container">
+          <form id="generate">
+            <input
+              type="text"
+              placeholder="Enter a topic for the poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="search-bar"
+              id="user-input" />
 
-          <input type="submit" value="Generate" class="search-button" />
-        </form>
-
-        <div class="poem" id="poem"></div>
+            <input type="submit" value="Generate" class="search-button" />
+          </form>
+          <div class="example">i.e: Flower, Music, Love etc.</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
