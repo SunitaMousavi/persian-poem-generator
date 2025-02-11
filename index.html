@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Persian Poems Generator</title>
   </head>
   <body>
@@ -26,7 +27,8 @@
             autofocus
             required
             autocomplete="off"
-            class="search-bar" />
+            class="search-bar"
+            id="user-input" />
 
           <input type="submit" value="Generate" class="search-button" />
         </form>
