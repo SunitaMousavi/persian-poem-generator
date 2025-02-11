@@ -27,6 +27,7 @@ form {
 }
 
 .search-bar {
+  width: 80%;
   padding: 16px;
   border: 2px solid #fc809f;
   border-radius: 50px;
