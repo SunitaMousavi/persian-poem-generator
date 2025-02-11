@@ -4,27 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
     <title>Persian Poems Generator</title>
   </head>
   <body>
-    <h1>Persian Poems Generator</h1>
-    <input type="search" />
-    <input type="submit" />
-    <p>
-      ‘Listen to this reed as it is grieving;
-      <br />
-      it tells the story of our separations.
-      <br />
-      ‘Since I was severed from the bed of reeds,
-      <br />
-      in my cry men and women have lamented.
-    </p>
-    <footer>
-      Coded by
-      <a href="https://github.com/SunitaMousavi/Persian-Poem-Generator" target="_blank"
-        >Sunita Mousavi</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Persian Poems Generator</h1>
+      </header>
+
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic for the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="search-bar" />
+
+          <input type="submit" value="Generate" class="search-button" />
+        </form>
+
+        <div class="poem">
+          ‘Listen to this reed as it is grieving;
+          <br />
+          it tells the story of our separations.
+          <br />
+          ‘Since I was severed from the bed of reeds,
+          <br />
+          in my cry men and women have lamented.
+        </div>
+      </main>
+
+      <footer>
+        Coded by
+        <a
+          href="https://github.com/SunitaMousavi/Persian-Poem-Generator"
+          target="_blank"
+          >Sunita Mousavi</a
+        > hosted on <a>Netlify</a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
